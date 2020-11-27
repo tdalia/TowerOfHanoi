@@ -1,0 +1,16 @@
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTowerUI.exe
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTowerUI.deps.json
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTowerUI.runtimeconfig.json
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTowerUI.runtimeconfig.dev.json
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTowerUI.dll
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTowerUI.pdb
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.csprojAssemblyReference.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.AssemblyInfoInputs.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.AssemblyInfo.cs
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.csproj.CoreCompileInputs.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.dll
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.pdb
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.genruntimeconfig.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\TowerOfHanoiLibrary.dll
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\TowerOfHanoiLibrary.pdb
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTowerUI.csproj.CopyComplete

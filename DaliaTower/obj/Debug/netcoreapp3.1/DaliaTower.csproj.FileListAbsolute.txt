@@ -1,0 +1,13 @@
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTower.exe
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTower.deps.json
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTower.runtimeconfig.json
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTower.runtimeconfig.dev.json
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTower.dll
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\bin\Debug\netcoreapp3.1\DaliaTower.pdb
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTower.csprojAssemblyReference.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTower.AssemblyInfoInputs.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTower.AssemblyInfo.cs
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTower.csproj.CoreCompileInputs.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTower.dll
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTower.pdb
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\DaliaTower\obj\Debug\netcoreapp3.1\DaliaTower.genruntimeconfig.cache

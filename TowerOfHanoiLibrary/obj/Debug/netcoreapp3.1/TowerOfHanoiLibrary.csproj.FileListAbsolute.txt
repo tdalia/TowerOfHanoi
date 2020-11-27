@@ -1,0 +1,9 @@
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\bin\Debug\netcoreapp3.1\TowerOfHanoiLibrary.deps.json
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\bin\Debug\netcoreapp3.1\TowerOfHanoiLibrary.dll
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\bin\Debug\netcoreapp3.1\TowerOfHanoiLibrary.pdb
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\obj\Debug\netcoreapp3.1\TowerOfHanoiLibrary.AssemblyInfoInputs.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\obj\Debug\netcoreapp3.1\TowerOfHanoiLibrary.AssemblyInfo.cs
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\obj\Debug\netcoreapp3.1\TowerOfHanoiLibrary.csproj.CoreCompileInputs.cache
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\obj\Debug\netcoreapp3.1\TowerOfHanoiLibrary.dll
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\obj\Debug\netcoreapp3.1\TowerOfHanoiLibrary.pdb
+D:\Bachelors\BellevueCollege\Fall 2020\PROG 260 - Data Struct & Algo\Project-TowerOfHanoi\TowerOfHanoiLibrary\obj\Debug\netcoreapp3.1\TowerOfHanoiLibrary.csprojAssemblyReference.cache
