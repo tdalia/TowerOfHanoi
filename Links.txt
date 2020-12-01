@@ -1,0 +1,4 @@
+geeksforgeeks.org/iterative-tower-of-hanoi/
+https://cs.stackexchange.com/questions/96624/how-to-solve-tower-of-hanoi-iteratively
+https://skorks.com/2010/03/solving-the-towers-of-hanoi-mathematically-and-programmatically-the-value-of-recursion/
+https://en.wikipedia.org/wiki/Tower_of_Hanoi#Iterative_solution

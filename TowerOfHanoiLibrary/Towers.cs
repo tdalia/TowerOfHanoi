@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace TowerOfHanoiLibrary
 {
+    [Serializable]
     public class Towers
     {
         private int numberOfDiscs;

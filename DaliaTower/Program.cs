@@ -37,7 +37,8 @@ namespace DaliaTowerUI
                     }
 
                     // List Moves
-                    ui.ViewMoveRecords();
+                    //ui.ViewMoveRecords();
+                    ui.PostGameReview();
                 }
 
                 // Ask to continue
@@ -473,7 +474,7 @@ namespace DaliaTowerUI
 
         #endregion
 
-       #region "AutoSolveStepByStep"
+        #region "AutoSolveStepByStep"
 
         public void AutoSolveStepByStep()
         {
@@ -576,6 +577,46 @@ namespace DaliaTowerUI
             {
                 WriteLine("ERROR: Fail to move - record is null");
             }
+        }
+
+        #endregion
+
+        #region "Post Game Review"
+
+        public void PostGameReview()
+        {
+            string choice = "";
+
+            do
+            {
+                WriteLine("\nPost-game review:");
+                WriteLine("- L - List moves");
+                WriteLine("- R - Replay");
+                WriteLine("- B - Replay backwards");
+                WriteLine("- F - Find result of specific move");
+                WriteLine("\n- X - Exit post-game review");
+
+                Write("\nChoose an option: ");
+                choice = ReadKey().KeyChar.ToString().Trim().ToUpper();
+
+                switch (choice)
+                {
+                    case "R": // Replay
+                        break;
+                    case "B": // Replay Backwards
+                        break;
+                    case "F":  // Find result of a specific move
+                        break;
+                    case "X":   //Exit
+                        break;
+                    case "L": // List Moves
+                    default:
+                        break;
+                }
+
+            } while (choice != "X");
+
+            return;
         }
 
         #endregion
