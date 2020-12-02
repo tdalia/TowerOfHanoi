@@ -80,7 +80,7 @@ namespace TowerOfHanoiLibrary
             {
                 IsComplete = true;
             }
-            MoveRecord moveRecord = new MoveRecord(NumberOfMoves, disc.Id, from, to);
+            MoveRecord moveRecord = new MoveRecord(NumberOfMoves, disc.Id, from, to, this);
 
             return moveRecord;
         }

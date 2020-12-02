@@ -10,7 +10,7 @@ namespace TowerOfHanoiLibrary
         public int FromPole { get; set; }
         public int ToPole { get; set; }
 
-        public Towers TowerState { get; set; }
+        public Towers TowerState { get; private set; }
 
         public MoveRecord(int moveNumber, int discNumber, int fromPole, int toPole)
         {

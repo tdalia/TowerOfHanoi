@@ -4,6 +4,7 @@ using System.Text;
 
 namespace TowerOfHanoiLibrary
 {
+    [Serializable]
     class Disc
     {
         public Disc(int discId)

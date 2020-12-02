@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using TowerOfHanoiLibrary;
+using TowerOfHanoiLibrary.AVL_BST;
 using static System.Console;
 
 namespace DaliaTowerUI
@@ -163,6 +164,7 @@ namespace DaliaTowerUI
                 moveRecords = new Queue<MoveRecord>();
                 undoMoves = new Stack<MoveRecord>();
                 redoMoves = new Stack<MoveRecord>();
+                //moveRecordTree = new MoveRecordTree<int, MoveRecord>();
             }
             catch (InvalidHeightException he)
             {
@@ -173,7 +175,7 @@ namespace DaliaTowerUI
         }
 
         public Towers GetTowers() => towers;
-
+         
         public void ViewMoveRecords()
         {
             string viewYN;
@@ -587,10 +589,19 @@ namespace DaliaTowerUI
         {
             string choice = "";
 
+            // Populate records in MoveRecordTree
+            MoveRecordTree<int, MoveRecord> moveRecordTree = new MoveRecordTree<int, MoveRecord>();
+            while(moveRecords.Count > 0)
+            {
+                MoveRecord rec = moveRecords.Dequeue();
+                moveRecordTree.Insert(rec.MoveNumber, rec);
+            }
+
             do
             {
-                WriteLine("\nPost-game review:");
+                WriteLine("\n\nPost-game review:");
                 WriteLine("- L - List moves");
+                WriteLine("- V - List moves in reverse");
                 WriteLine("- R - Replay");
                 WriteLine("- B - Replay backwards");
                 WriteLine("- F - Find result of specific move");
@@ -602,15 +613,29 @@ namespace DaliaTowerUI
                 switch (choice)
                 {
                     case "R": // Replay
+                        ReplayGame(moveRecordTree);
                         break;
                     case "B": // Replay Backwards
+                        ReplayGameBackwards(moveRecordTree);
                         break;
                     case "F":  // Find result of a specific move
+                        FindMoveInTree(moveRecordTree);
                         break;
                     case "X":   //Exit
                         break;
+                    case "V":
+                        Console.Clear();
+                        Console.WriteLine();
+                        moveRecordTree.TraverseReverse(m =>
+                        {
+                            WriteLine($"   Move {m.MoveNumber}: Disc {m.DiscNumber} was moved from tower {m.FromPole} to tower {m.ToPole}");
+                        });
+                        break;
                     case "L": // List Moves
                     default:
+                        Console.Clear();
+                        Console.WriteLine();
+                        moveRecordTree.Traverse(MoveDisplay);
                         break;
                 }
 
@@ -618,6 +643,95 @@ namespace DaliaTowerUI
 
             return;
         }
+
+        private void FindMoveInTree(MoveRecordTree<int, MoveRecord> moveRecordTree)
+        {
+            Write("\n\nEnter move number: ");
+            string inputStr = ReadLine().Trim().ToUpper();
+            int moveNum = -1;
+            bool valid = Int32.TryParse(inputStr, out moveNum);
+            if (!valid)
+            {
+                WriteLine("\n ERROR: Invalid Move number. Enter a number.");
+                return;
+            }
+
+            if (moveNum < 1 || moveNum > towers.NumberOfMoves)
+            {
+                WriteLine($"\n ERROR: Invalid Move number - out of range. Enter move number between 1 and {towers.NumberOfMoves}");
+                return;
+            }
+
+            MoveRecord record = moveRecordTree.Find(moveNum);
+            if (record != null)
+            {
+                Console.Clear();
+                if (record.TowerState != null)
+                {
+                    TowerUtilities.DisplayTowers(record.TowerState);
+                    WriteLine($"Move {record.MoveNumber}: Disc {record.DiscNumber} was moved from tower {record.FromPole} to tower {record.ToPole}");
+                }
+            }
+            else
+            {
+                WriteLine($"\n ERROR: Record not found for move number {moveNum}.");
+            }
+
+
+            return;
+        }
+
+        private void ReplayGame(MoveRecordTree<int, MoveRecord> moveRecordTree)
+        {
+            Console.Clear();
+            WriteLine("<<< REPLAY >>>");
+            // Display initial state
+            TowerUtilities.DisplayTowers(new Towers(NumberOfDiscs));
+            Thread.Sleep(500);
+
+            moveRecordTree.Traverse(record =>
+            {
+                Console.Clear();
+                WriteLine("<<< REPLAY >>>");
+                if (record.TowerState != null)
+                {
+                    TowerUtilities.DisplayTowers(record.TowerState);
+                    WriteLine($"Move {record.MoveNumber}: Disc {record.DiscNumber} was moved from tower {record.FromPole} to tower {record.ToPole}");
+                    Thread.Sleep(500);
+                }
+            });
+
+            return;
+        }
+
+        private void ReplayGameBackwards(MoveRecordTree<int, MoveRecord> moveRecordTree)
+        {
+            moveRecordTree.TraverseReverse(MoveWithMoveWithStateDisplay);
+
+            // Display initial state
+            Console.Clear();
+            WriteLine("<<< REPLAY >>>");
+            TowerUtilities.DisplayTowers(new Towers(NumberOfDiscs));
+        }
+
+        // Delegate Display methods
+        public void MoveDisplay(MoveRecord m)
+        {
+            WriteLine($"   Move {m.MoveNumber}: Disc {m.DiscNumber} was moved from tower {m.FromPole} to tower {m.ToPole}");
+        }
+
+        private void MoveWithMoveWithStateDisplay(MoveRecord record)
+        {
+            Console.Clear();
+            WriteLine("<<< REPLAY >>>");
+            if (record.TowerState != null)
+            {
+                TowerUtilities.DisplayTowers(record.TowerState);
+                WriteLine($"Move {record.MoveNumber}: Disc {record.DiscNumber} was moved from tower {record.FromPole} to tower {record.ToPole}");
+                Thread.Sleep(500);
+            }
+        }
+
 
         #endregion
     }
